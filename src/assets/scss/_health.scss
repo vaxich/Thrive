@@ -1,0 +1,109 @@
+.health{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.health__block{
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.health-text{
+    font-size: 32px;
+    line-height: 34px;
+    color:#fff;
+    margin-right: 72px;
+    padding-bottom: 152px;
+    max-width: 195px;
+    position: relative;
+}
+
+.health__block:nth-child(3){
+  padding-bottom: 30px;
+  padding-right: 74px;
+  
+}
+.health__block:nth-child(4){
+  padding-bottom: 30px;
+  padding-right: 34px;
+}
+.health__block:nth-child(5){
+  padding-bottom: 30px;
+  padding-right: 74px;
+}
+.health__block:nth-child(6){
+  padding-bottom: 30px;
+  padding-right: 74px;
+}
+
+.health-text::before{
+    position: absolute;
+    width: 9px;
+    height: 10px;
+    content:"";
+    background-image: url("../images/Ellipse.png");
+    
+    left: -32px;
+    top: 15px;
+}
+.health__block::before{
+    position: absolute;
+    width: 340px;
+    height: 2px;
+    content:"";
+    background-image: url("../images/health-line.png");
+    left: 16%;
+    top: 97px;
+}
+.health__block--darkblue{
+    background: #22356F;
+}
+.health__block--blue{
+    background: #0052C1;
+}
+.health__block--pink{
+    background-image: url("../images/health-3.png");
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.health__block--lightblue{
+    background: #62D0DF;
+}
+.health__block--grey{
+    background: #DEE1FF;
+}
+.health__block--fiolet{
+    background: #8F00FF;
+}
+@media (max-width: 1300px) {
+    .health{
+        
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+}
+@media (max-width: 876px) {
+    .health{
+        
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+}
+@media (max-width: 478px) {
+    .health__block::before{
+        
+        display: none;
+    }
+    .health-text::before{
+        display: none;
+    }
+}

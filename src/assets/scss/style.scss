@@ -1,0 +1,21 @@
+@import './normalize';
+
+@import './fonts';
+@import './header.scss';
+@import './why';
+@import './about';
+@import './iron';
+@import './health';
+@import './aside';
+@import './affects';
+@import './contacts';
+@import './footer';
+@import './media';
+
+p, h3,h2, li {
+    font-family: "Larsseit";
+}
+.propusk{
+    min-height: 121px;
+    
+}

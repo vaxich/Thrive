@@ -1,0 +1,57 @@
+.iron{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    min-height: 366px;
+    padding-top: 8px;
+    font-size: 32px;
+    line-height: 34px;
+    color: #fff;
+}
+.iron__blok{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 133px;
+    padding-right: 20px;
+}
+.iron__text{
+    max-width: 200px;
+    position: relative;
+}
+.iron__text::before{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    content:"";
+    background-image: url("../images/Ellipse.png");
+    left: -20px;
+    top: 10px;
+}
+.iron__blok--pink{
+    background-color: #FFE2DE;
+}
+.iron__blok--green{
+    background-color: #C4E769;
+    padding-top: 30px;
+    
+}
+.iron__blok--lightblue{
+    background-color: #62D0DF;
+}
+.iron__blok--blue{
+    background-color: #0052C1;
+}
+@media (max-width: 1268px) {
+    .iron{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media (max-width: 630px) {
+    .iron{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
